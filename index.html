@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <style>
+
+  </style>
+
+</head>
+
+<body>
+
+
+  <main class="main">
+    <div class="container">
+      <div class="grid">
+        <div class="imgs-area">
+          <div class="img-box">
+            <img class="card-front main-img " src="./images/bg-card-front.png" alt="">
+            <img src="./images/card-logo.svg" alt="" class="card-logo">
+            <p class="card-number">1111 1111 1111 1111</p>
+            <div class="card-details">
+              <h4 class="card-name">Jane Appleseed</h4>
+              <p><small class="mm">09 /</small> <small class="yy">00</small></p>
+            </div>
+          </div>
+          <div class="img-box">
+            <img class="card-back main-img " src="./images/bg-card-back.png" alt="">
+            <p class="card-cvc"> 000 </p>
+          </div>
+        </div>
+        <form id="form" class="inputs-area">
+          <div class="input">
+            <label for="cardname">cardholder Name</label>
+            <input type="text" placeholder="e.g. Jane Appleseed" id="cardName" name="cardname">
+
+          </div>
+          <div class="input">
+            <label for="cardname">Card Number</label>
+            <input type="tel" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000" name="cardnumber">
+
+
+          </div>
+          <div class="input exp">
+            <div class="date">
+              <label for="date">Exp. Date (MM/YY)</label>
+              <div class="date-inputs">
+                <div style="width: 100px;">
+                  <input type="tel" id="cardMM" placeholder="MM" name="cardmonth">
+                </div>
+                <div style="width: 100px;">
+                  <input type="tel" id="cardYY" placeholder="YY" name="cardyear">
+                </div>
+              </div>
+
+
+            </div>
+            <div class="cvc">
+              <label for="cvc">CVC</label>
+              <input type="tel" id="cardCVC" placeholder="e.g. 123" name="cvc">
+
+            </div>
+
+          </div>
+
+          <img src="./images/icon-complete.svg" style="width: 150px; margin: 0 auto;" alt="" class="complete">
+          <h1 class="complete" style="margin-inline: auto">THANK YOU!</h1>
+          <p class="complete" style="margin-inline: auto">We've added your card Details</p>
+
+          <button type="submit" id="confirmButton">Confirm</button>
+
+        </form>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
